@@ -1,94 +1,254 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="en">
+
 <head>
-    <!--tipo de codificação, caracteres, acentos.--> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--para o site preencher parte branca da tela tela-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elias.html</title>
-    <link rel="shortcut icon" href="../HTML/Downloads/Cjdowner-Cryptocurrency-Flat-Bitcoin-BTC.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./HTML/1. Style.css">
-    <link rel="stylesheet" href="./HTML/1. MediaQ.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Cadastro</title>
 </head>
+
 <body>
-    <header>
-        <h1>Repositório</h1>
-        <a href="../../Projeto-login/index.html">Sair</a>
-        <a href="https://github.com/httpE2Barao" id="Git" target="_blank" rel="external">Github</a>
+
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <li class="opções__item"><a href="#" class="opções__link">Categorias</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
     </header>
 
-<section>
-    <h2 id="HTML">HTML5</h2>
-    <ol>
-        <li><a href="2.Tags, p, emoji, img.html"target="_self" hreflang="next">Tags, p, emoji, img</a></li>
-        <li><a href="3.Hierarquia de Títulos.html"target="_self">Hierarquia de Títulos</a></li>
-        <li><a href="4.0.Formatação de Caracteres.html"target="_self">Formatação de caracteres</a></li>
-        <li><a href="4.1.Códigos, Abreviações.html"target="_self">Código, Abreviação...</a></li>
-        <li><a href="5.0.Listas.html"target="_self">Listas</a></li>
-        <li><a href="6.0.Links e Downloads.html"target="_self">Links e Downloads</a></li>
-        <li><a href="7.0.Desafio 1.html"target="_self">Primeiro Desafio</a></li>
-        <li><a href="8.0.Imagens e Áudio.html"target="_self">Imagens e Áudio</a></li>
-        <li><a href="9.0.Video.html">Vídeos</a></li>
-        <li><a href="10.Desafio 2.html" class="especial">Desafio 2 </a></li>
-        <li><a href="11-Formulário.html" class="especial">Formulários </a></li>
-    </ol>
-        <h2 id="CSS">CSS3</h2>
-        <ol type="A">
-            <li><a href="../CSS/A-Estilos inline.html">Estilos Inline</a></li>
-            <li><a href="../CSS/B-Estilos internos.html">Estilos Internos</a></li>
-            <li><a href="../CSS/C-Estilos externos.html">Estilos externos</a></li>
-            <li><a href="../CSS/D-Cores.html">Cores</a></li>
-            <ol type="i"><li><a href="../CSS/D1-Degrade.html">Degrade</a></li></ol>
-            <li class="especial"><a href="../CSS/E-Projeto 1.html">Projeto site c/ CSS  </a></li>
-            <li><a href="../CSS/F-Fontes.html">Fontes</a></li>
-            <li><a href="../CSS/G-ID  e Classes.html">IDs e Classes</a></li>
-            <ol type="i"><li><a href="../CSS/G1- Peseudoclasse.html">Pseudo-classes</a></li>
-                <li><a href="../CSS/G2-Pseudoelementos.html">Pseudo-elementos</a></li>
-                <li><a href="../CSS/H-Caixas.html">Modelo de Caixas</a></li>
-                <li><a href="../CSS/H1- Simplificando caixas.html">Simplificando caixas</a></li>
-                <li class="especial"><a href="../CSS/H2- Group, Shadow, Radius.html">Group, Shadow, Radius   </li></a>
-            </ol>
-            <li class="especial"><a href="../CSS/I- Projeto 2.html">Projeto Android </li></a>
-            <li><a href="../CSS/J-Imagem de fundo.html">Imagem de Fundo</li></a>
-            <ol type="i"><li><a href="../CSS/J1-Personalização.html">Personalização de fundo</li></a>
-                <li><a href="../CSS/J2-Personalização 2.html">Imagem de exemplo</li></a>
-                <li><a href="../CSS/J3-Exemplo.html">Exemplo Img de Fundo</li></a>
-            </ol>
-            <li><a href="../CSS/K-Centralização boxes.html">Centralização de Boxes</li></a>
-            <li class="especial"><a href="../CSS/L-Projeto Cordel.html">Projeto Cordel </li></a>
-            <li><a href="../CSS/M-Tabelas.html">Tabelas</a></li>
-            <ol>
-                <li type="i"><a href="../CSS/M1-Células aumentadas.html">Células aumentadas</a></li>
-                <li type="i"><a href="../CSS/M2-Tabelas grandes.html">Mesclado, Sticky </a></li>
-                <li type="i"><a href="../CSS/M3-Reponsivo.html">Responsivo - Fav. Filmes</a></li>
-                <li class="especial" type="i"><a href="../CSS/M4-Ex Media Escolar.html">Exemplo Média Escolar </a></li>
-            </ol>
-            <li><a href="../CSS/N-Iframe.html">iframes</a></li>
-            <li class="especial"><a href="../CSS/O-iframe.html">Formulários, JavaScripts, Mapas </a></li>
-            <li><a href="../../Projeto-redes-sociais/index.html" class="especial">Projeto - Redes Socias </a></li>
-            <li><a href="../CSS/P- Media query/ex. 1/index.html">Media Query - Print, Orientation</a></li>
-            <ol type="i">
-                <li><a href="../CSS/P- Media query/ex. 2/index.html">Break points </a></li>
-                <li><a href="../CSS/P- Media query/ex. 3/index.html">Menu "hamburguer"</a></li>
-            </ol>
-            <li class="especial"><a href="../../Projeto-login/index.html">Projeto login responsivo </a></li>
-            <li class="especial"><a href="../SASS/Ex. 0/index.html">Projeto login responsivo </a></li>
+    <section class="banner">
+        <h2 class="banner__titulo">Endereço _ Auto-complete</h2>
+    </section>
 
-        </ol>
-        <h2 id="JS">Java Script</h2>
-        <ol type="I">
-            <li><a href="../JavaScript/A. Armaz. de Dados/index.html">Armazenando Dados</a></li>
-            <li><a href="../JavaScript/B. DOM/index.html">Document Object Model</a></li>
-            <li><a href="../JavaScript/C. Condição/SimplesComposta.html">Condições</a></li>
-            <li class="especial"><a href="../JavaScript/D. Ex.Detector de pessoas/index.html">Exercício: Detector de pessoas </a></li>
-            <li class="especial"><a href="../JavaScript/F. Ex.Tabuada/index.html">Exercício: Tabuada </a></li>
-            <li class="especial"><a href="https://travel-bag-git-main-httpe2barao.vercel.app" target="_blank">Projeto Mala de Viagem</a></li>
-            <li class="especial"><a href="https://spa-palace-project.vercel.app/" target="_blank">Projeto Spa Palace</a></li>
-            <li class="especial"><a href="https://jogo-numero-secreto-3425ysutw-httpe2barao.vercel.app/" target="_blank">Jogo Reconhecimento de voz</a></li>
-            <li class="especial"><a href="https://cep-auto-complete.vercel.app/" target="_blank">CEP Auto-Complete</a></li>
-        </ol>
-</section>
-    <br><br><br><br><br><br><br><br><br>
+    <main class="principal">
+        <h2 class="principal__titulo">Dados do cadastro</h2>
+        
+        <h3 class="principal__subtitulo">Endereço</h3>
+        
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="cep">CEP</label>
+                <input name="cep" id="cep" class="campo__escrita" required />
+                <div id="erro"></div>
+            </div>
+
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="endereco">Endereço</label>
+                <input name="endereco" id="endereco" class="campo__escrita" required />
+            </div>
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="numero">Numero</label>
+                    <input name="numero" id="numero" class="campo__escrita" required />
+                </div>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="complemento">Complemento</label>
+                    <input name="complemento" id="complemento" class="campo__escrita" />
+                </div>
+            </div>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="bairro">Bairro</label>
+                <input name="bairro" id="bairro" class="campo__escrita" required />
+            </div>
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="cidade">Cidade</label>
+                    <input name="cidade" id="cidade" class="campo__escrita" required />
+                </div>
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="estado">UF</label>
+                    <select id="estado" name="estado" class="campo__escrita">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <form class="principal__formulario" id="formulario" target="_blank"
+            onsubmit="location.replace('./cadastro-finalizado.html')">
+            <h3 class="principal__subtitulo">Dados pessoais</h3>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="nome">Nome Completo</label>
+                <input name="nome" id="nome" class="campo__escrita" required />
+            </div>
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="nascimento">Nascimento</label>
+                    <input name="nascimento" id="nascimento" type="date" class="campo__escrita" required />
+                </div>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="telefone">Contato</label>
+                    <input name="telefone" id="telefone" type="tel" placeholder="(XX) XXXXX-XXXX" class="campo__escrita"
+                        required />
+                </div>
+            </div>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="email">E-mail</label>
+                <input name="email" id="email" type="email" class="campo__escrita" required />
+            </div>
+
+            <input type="submit" value="Enviar formulário" class="formulario__botao" id="enviar">
+        </form>
+    </main>
+
+    <hr>
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Grupo Alura</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação</li>
+            <li class="lista-rodapé__item">
+                <img src="img/CasaDoCodigo.svg" alt="Logo da casa do código">
+                <a href="https://www.casadocodigo.com.br/" class="lista-rodapé__link">Casa do código</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Caelum.svg" alt="Logo da caelum">
+                <a href="https://caelum.com.br/" class="lista-rodapé__link">Caelum</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação online</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Alura.svg" alt="Logo da Alura">
+                <a href="https://www.alura.com.br/" class="lista-rodapé__link">Alura</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
+                <a href="https://www.alura.com.br/empresas" class="lista-rodapé__link">Alura para Empresas</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam">
+                <a href="https://www.aluracursos.com/" class="lista-rodapé__link">Alura LATAM</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraStart.svg" alt="Logo da Alura START">
+                <a href="https://www.alurastart.com.br/" class="lista-rodapé__link">Alura Start</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/MusicDot.svg" alt="Logo da Music Dot">
+                <a href="https://www.musicdot.com.br/" class="lista-rodapé__link">Music Dot</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua">
+                <a href="https://www.aluralingua.com.br/" class="lista-rodapé__link">Alura Lingua</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/PM3.svg" alt="Logo da PM3">
+                <a href="https://www.cursospm3.com.br/" class="lista-rodapé__link">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Comunidade</li>
+            <li class="lista-rodapé__item">
+                <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech">
+                <a href="https://hipsters.tech/" class="lista-rodapé__link">Hipsters ponto Tech</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev">
+                <a href="https://scuba.dev.br/" class="lista-rodapé__link">Scuba Dev</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech">
+                <a href="https://layerspontotech.com.br/" class="lista-rodapé__link">Layers ponto Tech</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/LikeABoss.svg" alt="Logo do Like a Boss">
+                <a href="https://likeaboss.com.br/" class="lista-rodapé__link">Like a Boss</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras">
+                <a href="https://www.carreirasemfronteiras.com.br/" class="lista-rodapé__link">Carreira sem
+                    fronteiras</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs">
+                <a href="https://hipsters.jobs/" class="lista-rodapé__link">Hipsters ponto jobs</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/GUJ.svg" alt="Logo do GUJ">
+                <a href="https://www.guj.com.br/" class="lista-rodapé__link">GUJ</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
